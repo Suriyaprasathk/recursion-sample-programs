@@ -1,0 +1,18 @@
+///program to print first 50 natural numbers
+#include<stdio.h>
+int prt(int);
+int main()
+{
+    int n=1;
+    
+    prt(n);
+}
+int prt(int n)
+{
+    if(n<51)
+    {
+     printf("%d\n",n);
+     prt(n+1);
+    }
+
+}
