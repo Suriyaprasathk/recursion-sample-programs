@@ -1,0 +1,31 @@
+#include<stdio.h>
+int rec(int,int);
+int a,b,c,n,i=0;
+int main()
+{
+    
+    printf("enter the last number");
+    scanf("%d",&n);
+    a=0;
+    b=1;
+    printf("%d\n",a);
+    printf("%d\n",b);
+    rec(a,b);
+    
+}
+int rec(int a,int b)
+{
+    if(i>n-3)
+    {
+        return ;
+    }
+    else
+    {
+    c=a+b;
+    printf("%d\n",c);
+    i++;
+    a=b;
+    b=c;
+    rec(a,b);
+    }
+}
