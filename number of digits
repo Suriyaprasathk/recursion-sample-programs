@@ -1,0 +1,27 @@
+#include<stdio.h>
+int digit(int);
+int main()
+{
+    int a,b;
+    printf("enter a number");
+    scanf("%d",&a);
+    b=digit(a);
+    printf("%d",b);
+}
+int digit(int x)
+{
+    
+    static int count=0;
+    if(x==0)
+    {
+        return; 
+    }
+    else
+    {
+    
+    count=count+1;
+    digit(x/10);
+    return count;
+    }
+    
+}
